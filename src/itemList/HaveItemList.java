@@ -15,7 +15,7 @@ public class HaveItemList {
 	
 	private static HaveItemList instance;
 	
-	private HaveItemList(String bigCatagory, String subCatagory, String itemName,  String sellerName, int itemCount,  int basePrice, int sellPrice) {
+	public HaveItemList(String bigCatagory, String subCatagory, String itemName,  String sellerName, int itemCount,  int basePrice, int sellPrice) {
 		this.bigCatagory = bigCatagory;
 		this.subCatagory = subCatagory;
 		this.itemName = itemName;

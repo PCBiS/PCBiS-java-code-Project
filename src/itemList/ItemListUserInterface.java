@@ -13,6 +13,8 @@ public class ItemListUserInterface implements ItemListInterface {
 		char exitFlag =' ';
 		Scanner sc = new Scanner(System.in);		
 		
+		//listCon.list.add(new HaveItemList(bigCatagory, subCatagory, itemName, sellerName, itemCount, basePrice, sellPrice));
+		
 		while (menuExitFlag) {
 			try {
 				mainCatagoryMenu();
