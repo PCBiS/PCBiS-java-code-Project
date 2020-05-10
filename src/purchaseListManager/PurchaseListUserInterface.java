@@ -9,8 +9,6 @@ public class PurchaseListUserInterface {
 		boolean menuExitFlag = true;
 		char exitFlag = ' ';
 		Scanner sc = new Scanner(System.in);
-		
-		//pListCon.list.add(new PurchaseList(purchaseIndex, purchaseDate, purchaseProduct, purchaseAmount, userID))
 
 		while (menuExitFlag) {
 			

@@ -2,8 +2,8 @@ package itemList;
 
 import java.util.Scanner;
 
-import itemList.Exception.OutOfExitcaseException;
-import itemList.Exception.OutOfNumberException;
+import exception.OutOfExitcaseException;
+import exception.OutOfNumberException;
 
 public class ItemListUserInterface implements ItemListInterface {
 	public static void main(String[] args) {

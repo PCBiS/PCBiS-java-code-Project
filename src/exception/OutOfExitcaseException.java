@@ -1,4 +1,4 @@
-package itemList.Exception;
+package exception;
 
 public class OutOfExitcaseException extends Exception {
 	public OutOfExitcaseException(String msg){

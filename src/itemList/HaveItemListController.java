@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * subCatagory - 0 : 사료 || 1 : 간식 || 2 : 장난감 || 3 : 미용도 || 4 : 켄넬 || 5 : 기타용품
  */
 
-public class HaveItemListController implements ItemListInterface {
+public class HaveItemListController {
 
 	ArrayList<HaveItemList> list = new ArrayList<HaveItemList>();
 	private static HaveItemListController instance;
@@ -22,7 +22,11 @@ public class HaveItemListController implements ItemListInterface {
 		return instance;
 	}
 	
-	void showRemainItem(String bigCatagory, String subCatagory) {
+	public void addItem(String bigCatagory, String subCatagory, String itemName,  String sellerName, int itemCount,  int basePrice, int sellPrice) {
+		list.add(new HaveItemList(bigCatagory, subCatagory, itemName, sellerName, itemCount, basePrice, sellPrice));
+	}
+	
+	public void showRemainItem(String bigCatagory, String subCatagory) {
 		ArrayList<String> needBuy = new ArrayList<String>();
 		if (list.isEmpty()) {
 			// List에 아무것도 저장이 안되었다면.
