@@ -20,6 +20,7 @@ public class GuestInterface implements GuestInfoInterface {
 			System.out.println("2. 로그아웃 하기.");
 			System.out.println("3. 회 원 가 입.");
 			System.out.println("4. 비밀번호 수정.");
+			System.out.println("5. 종 료 하 기.");
 			try {
 				mainMenu = sc.nextInt();
 				if (mainMenu < MAINMENU_LOGIN || mainMenu > MAINMENU_EXIT) {
@@ -137,9 +138,10 @@ public class GuestInterface implements GuestInfoInterface {
 					}
 					break;
 				}
+			case 5:
+				System.out.println("회원 관리 메뉴를 종료합니다.");
 				break;
 			}
-
 		}
 	}
 }
