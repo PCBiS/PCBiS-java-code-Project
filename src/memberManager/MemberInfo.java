@@ -1,6 +1,6 @@
-package guestManager;
+package memberManager;
 
-public class GuestInfo {
+public class MemberInfo {
 	String id = null;
 	String userName = null;
 	String password = null;
@@ -9,7 +9,7 @@ public class GuestInfo {
 	boolean isLogin = false;
 	boolean isAdmin = false;
 	
-	public GuestInfo(String id, String userName, String password, int userPoint, int absoultePoint) {
+	public MemberInfo(String id, String userName, String password, int userPoint, int absoultePoint) {
 		super();
 		this.id = id;
 		this.userName = userName;
@@ -18,7 +18,7 @@ public class GuestInfo {
 		this.absoultePoint = absoultePoint;
 	}
 	
-	public GuestInfo(String id, String userName, String password, int userPoint, int absoultePoint, boolean isAdmin) {
+	public MemberInfo(String id, String userName, String password, int userPoint, int absoultePoint, boolean isAdmin) {
 		super();
 		this.id = id;
 		this.userName = userName;

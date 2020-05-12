@@ -2,14 +2,14 @@ package petshopMainUi;
 
 import java.util.Scanner;
 
-import guestManager.GuestInterface;
 import itemList.ItemListUserInterface;
+import memberManager.MemberInterface;
 import sellerList.SellerListUserInterface;
 
 public class PetshopUI {
 	public static void main(String[] args) {
 		SellerListUserInterface sellerUI = new SellerListUserInterface();
-		GuestInterface guestUI = new GuestInterface();
+		MemberInterface guestUI = new MemberInterface();
 		ItemListUserInterface itemListUI = new ItemListUserInterface();
 		Scanner sc = new Scanner(System.in);
 		int mainSelect = -1;

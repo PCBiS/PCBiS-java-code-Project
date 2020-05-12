@@ -1,4 +1,4 @@
-package guestManager;
+package memberManager;
 
 import java.util.Scanner;
 
@@ -6,9 +6,9 @@ import exception.InputNullValueException;
 import exception.OutOfExitcaseException;
 import exception.OutOfNumberException;
 
-public class GuestInterface implements GuestInfoInterface {
+public class MemberInterface implements MemberInfoInterface {
 	public static void main(String[] args) {
-		GuestInfoController info = GuestInfoController.getInstance();
+		MemberInfoController info = MemberInfoController.getInstance();
 		Scanner sc = new Scanner(System.in);
 		String id = null, pw = null, pwCheck = null, oldPw = null, userName = null;
 		int mainMenu = -1;

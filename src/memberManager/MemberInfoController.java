@@ -1,22 +1,22 @@
-package guestManager;
+package memberManager;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class GuestInfoController {
+public class MemberInfoController {
 	
 	
-	private static GuestInfoController instance;
+	private static MemberInfoController instance;
 	
-	List<GuestInfo> info;
+	List<MemberInfo> info;
 	
-	private GuestInfoController() {
-		info = new ArrayList<GuestInfo>();
+	private MemberInfoController() {
+		info = new ArrayList<MemberInfo>();
 	}
-	public static GuestInfoController getInstance() {
+	public static MemberInfoController getInstance() {
 		if (instance==null) {
-			instance = new GuestInfoController();
+			instance = new MemberInfoController();
 		}
 		return instance;
 	}
@@ -27,7 +27,7 @@ public class GuestInfoController {
 		}else if(overlapIDCheck(id)){
 			System.out.println("중복된 아이디가 존재합니다. 다시 확인 바랍니다.");
 		}else {
-			info.add(new GuestInfo(id, userName, password, 0, 0));
+			info.add(new MemberInfo(id, userName, password, 0, 0));
 			System.out.println(userName + " 님 께서 신규 회원으로 가입하셨습니다. 가입하신 id는 " + id + " 입니다.");
 		}
 	}
@@ -38,7 +38,7 @@ public class GuestInfoController {
 		}else if(overlapIDCheck(id)){
 			System.out.println("중복된 아이디가 존재합니다. 다시 확인 바랍니다.");
 		}else {
-			info.add(new GuestInfo(id, userName, password, 0, 0));
+			info.add(new MemberInfo(id, userName, password, 0, 0));
 			System.out.println(userName + " 님 께서 관리자 회원으로 가입하셨습니다. 가입하신 id는 " + id + " 입니다.");
 		}
 	}

@@ -1,6 +1,6 @@
-package guestManager;
+package memberManager;
 
-public interface GuestInfoInterface {
+public interface MemberInfoInterface {
 	int MAINMENU_LOGIN = 1;
 	int MAINMENU_LOGOUT = 2;
 	int MAINMENU_REGISTERMEMBER = 3;
