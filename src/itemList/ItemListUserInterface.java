@@ -5,7 +5,7 @@ import java.util.Scanner;
 import exception.OutOfExitcaseException;
 import exception.OutOfNumberException;
 
-public class ItemListUserInterface implements ItemListInterface {
+public class ItemListUserInterface implements ItemListMenuNameInterface {
 	public static void main(String[] args) {
 		HaveItemListController listCon = HaveItemListController.getInstance();
 		int bigCatagory=-1, subCatagory=-1;

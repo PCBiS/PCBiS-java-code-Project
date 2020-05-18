@@ -1,6 +1,6 @@
 package itemList;
 
-public interface ItemListInterface {
+public interface ItemListMenuNameInterface {
 	// main에서 사용하는 상수.
 	int AllList = 1;
 	int CatList = 2;

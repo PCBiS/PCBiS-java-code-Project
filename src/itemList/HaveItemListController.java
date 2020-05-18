@@ -31,7 +31,7 @@ public class HaveItemListController {
 		if (list.isEmpty()) {
 			// List에 아무것도 저장이 안되었다면.
 			System.out.println("출력 할 데이터가 없습니다.");
-		} else if(bigCatagory==ItemListInterface.ALL && subCatagory==ItemListInterface.ALL){
+		} else if(bigCatagory==ItemListMenuNameInterface.ALL && subCatagory==ItemListMenuNameInterface.ALL){
 			// 대분류도 ALL이고 소분류도 ALL이면.
 			System.out.println("====================================================================");
 			System.out.println("|                     전체 상품 목록을 출력 합니다.                        ");
@@ -49,7 +49,7 @@ public class HaveItemListController {
 			System.out.println("====================================================================");
 			System.out.println("|    대분류 : " + bigCatagory + "  소분류 : " + subCatagory + "   |");
 			System.out.println("====================================================================");
-			if (bigCatagory==ItemListInterface.ALL && !(subCatagory==ItemListInterface.ALL)) {
+			if (bigCatagory==ItemListMenuNameInterface.ALL && !(subCatagory==ItemListMenuNameInterface.ALL)) {
 				// 대분류가 ALL이고 소분류가 ALL이 아니면(다른 문자열이 들어옴)
 				for (int i = 0; i < list.size(); i++) {
 					if (list.get(i).subCatagory.equals(subCatagory)) {
@@ -63,7 +63,7 @@ public class HaveItemListController {
 						}
 					}	
 				}				
-			}else if (!(bigCatagory==ItemListInterface.ALL) && subCatagory==ItemListInterface.ALL) {
+			}else if (!(bigCatagory==ItemListMenuNameInterface.ALL) && subCatagory==ItemListMenuNameInterface.ALL) {
 				// 대분류가 ALL이 아니고, 소분류 ALL이라면
 				for (int i = 0; i < list.size(); i++) {
 					if (list.get(i).bigCatagory.equals(bigCatagory)) {
